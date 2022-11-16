@@ -1,5 +1,31 @@
 ## SD Stores Logistics Releases
 
+### 3.1.0
+
+#### Enhancements
+
+- BCv21 App - A new activity table was created, and the SD Stores Logistics activity pages were changed to have this table as their source table. 
+
+- BCv21 App - The format of the SD Stores Logisitics permission names were standardised to that of our other Apps. 
+
+- BCv21 App - The Latest ISV Licence Control was added to SD Stores Logistics. 
+
+- BCv21 App - The Licence Message displayed on first install of SD Stores Logistics was changed to prompt the user to activate a free trial and to choose Assisted Setup from the Setup Card to create demo data. 
+
+- BCv21 App - A page was created to display all the Simply Dynamics Apps and subscription details for the tenant. 
+
+- BCv21 App - The Licence Expiry message/notification was updated to display the App Name as part of the message. 
+
+- BCv21 App - The Product Activation Page was updated to point to the new CRM URL. 
+
+- BCv21 App - The ToolTips were updated to look at our new website. 
+
+- BCv21 App - The links in the About Page were updated to point to new URLs. 
+
+#### Bug Fixes
+
+- BCv21 App - A fix was made to the code for licence key checks on the SD Stores Logistics Role Centre.  
+
 ### 3.0.0
 
 #### Enhancements
