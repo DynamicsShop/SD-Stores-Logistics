@@ -1,5 +1,23 @@
 ## SD Stores Logistics Releases
 
+### 3.1.1
+
+#### Enhancements
+
+- AppSource App - A change was made to limit the SD ISV Tenant Subscriptions page to display just our SD ISV AppSource Apps and not other SD PTE Apps.
+
+- AppSource App - A notification was added to SD Stores Logistics pages to show users that they need to activate the licence on first install of the App.
+
+- AppSource App - The SD Stores Logistics Assisted Setup page was removed from the Tell Me search.
+
+#### Bug Fixes
+
+- AppSource App - When selecting SD Stores Logistics activity pages in the Tell Me search in a BCv22 environment, the activity pages were hanging.
+
+- AppSource App - A change was made to the ISV Licence Notification procedure in SD Stores Logistics to fix an issue that would raise an error when the language is changed from English to another language.
+
+- AppSource App - The SD Stores Logistics Setup card was unresponsive if the KPI FastTab was minimised on open of the page.
+
 ### 3.1.0
 
 #### Enhancements
