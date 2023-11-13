@@ -1,5 +1,126 @@
 ## SD Stores Logistics Releases
 
+### 4.0.0
+
+#### Enhancements
+
+- AppSource App - The initial auto population of the Queued Documents list was changed to populate using the Default Movement Types from the SD Stores Logistics Setup. 
+
+- AppSource App - A new column, Agreed Rate, was added to the Queued Documents. If the Total Rate has a value and the Agreed Rate has a value the Manifest picks up the Agreed Rate. A new field called Enforce Manifest Cost was added to the setup card. This option will check if there is a rate amount on the Manifest when the manifest is released. 
+
+- AppSource App - A Shipping Agent Booking Reference field was added to the Manifest.  
+
+- AppSource App - A new Boolean called Enforce Shipment on Close Manifest was added to the SD Stores Logistics Setup card. This field checks for any Ship or Receive (depending on the document type) made against the document. 
+
+- AppSource App - When updating Rates in the Queued Documents list the take effect date is set to the work date. Users will be prompted to create a new rate if they enter a different rate the next day. 
+
+- AppSource App - The Rate Amount from the Shipped Manifest was surfaced in the Shipped Manifest FactBox to allow for a drill down to see the breakdown of rates. 
+
+- AppSource App - A generated Purchase Document for a foreign currency had the currency amount for rates in LCY values. This was changed so that the rates must be entered on the rate card in the Vendor's/Shipping Agent's currency. 
+
+- AppSource App - Users are not allowed to delete a record from the Queued Documents if the record has a manifest number. 
+
+- AppSource App - If a Shipping Agent Code or Shipping Agent Service are updated on the Queued Documents, these changes are now saved. 
+
+- AppSource App - Do not allow users to add rates of type Fuel Surcharge and Agreed Rate on the Zone Rates List in the Zone Card. 
+
+- AppSource App - When the Enforce Manifest Cost option in the Setup card is off, don't prompt the user to enter rates on the Manifest. 
+
+- AppSource App - Update the text on the message displayed if the Enforce Manifest Cost is switched on in the Setup card and there is no rate on the manifest. 
+
+- AppSource App - The new fields on the Shipped Load Manifest Pallet Rate Currency Code, No. of Pallets, No. of Pallet Spaces, Total Rate, Agreed Rate and Booking Reference were added to the Shipped/Closed Load Manifest. 
+
+- AppSource App - Some ToolTips on the Setup Card were updated. 
+
+- AppSource App - If a rate is entered in the Queued Documents list and the Shipping Agent or Shipping Agent Service is then changed, the rates are revalidated. 
+
+- AppSource App - On the Visual Load Planner a change was made to not allow orders with a different Shipping Agents to exist on the Manifest.  
+
+- AppSource App - In the Rates card there is a new Type of Fuel Surcharge. Do not allow users to add a rate of with a Type of Fuel Surcharge. Fuel Surcharge is added to the Agent to Vendor list.  
+
+- AppSource App - The Pallet Cost Currency Code was surfaced on the Queued Documents.   
+
+- AppSource App - When assigning documents to manifests checks are made and a prompt is raised if the documents exists on another manifest. 
+
+- AppSource App - The SD Stores Logistics Available Documents list was recaptioned to SD Stores Logistics Queued Documents to match the cue caption in the Role Centre. 
+
+- AppSource App - Updating the Shipping Agent and Shipping Agent Service on the Queued Documents list does not update the underlying document but the modified changes are stored on the manifest lines.  
+
+- AppSource App - A change was made to display the Default Movement Types DateFormula from the Setup card in the Document Selector request page. 
+
+- AppSource App - The captions in the Document Selector request page were updated to reflect the Document Types that you are entering the filters for rather than the Table.  
+
+- AppSource App - Captions in the Movement Types Defaults FastTab in the SD Stores Logistics Setup card were updated. 
+
+- AppSource App - An ODATA feed was created for the closed manifests to view the carriage costs.  
+
+- AppSource App - Changes were made to the automatically generated Purchase Order and Purchase Invoice for shipping charges. A Fuel Surcharge % field was added to the Shipping Agent to Vendor list. The Fuel Surcharge % is calculated on the release of a manifest as a percentage of the load cost. 
+
+- AppSource App - A number of changes were made to the manifests. Manifest status has been changed to Open, Released or Closed. Cues on the Role Centre have been updated to reflect this change. Pallet information is now stored on the manifest. When assigning orders to manifests, the orders are checked and users are prompted if the orders exist on another manifest. 
+
+- AppSource App - A number of changes were made to the Queued Documents. The Queued Documents cue was moved to the first cue in the Role Centre. When the Queued Documents list is opened, the page is automatically refreshed to bring in the documents based on the default movement type values in the SD Stores Logistics Setup card. The Get Documents action was pinned to the menu and the action was renamed to Refresh. The Batch field has been retired. A new option of pallet has been added to the Type field in the Rates table. New columns were added to the Queued Documents list to enter the number of pallets, pallet spaces, pallet space rate, and total rate. In the Queued Documents list the users can update the Shipping Agent Code, Shipping Agent Service Code, and Zone. If the user manually types in a rate or modifies a rate, a prompt is rasied to ask if they want to update the rate if the Shipping Agent/Service Code/Zone combination exists or if they want to create the rate if the Shipping Agent/Service Code/Zone combination does not exist.   
+
+- AppSource App - The Enforce Trailer Loading field was removed from the Shipping Agents to Vendors list.  
+
+- AppSource App - A new FastTab for movement types defaults with associated DateFormula fields was added to the SD Stores Logistics Setup card. On open of the Queued Documents list, the documents are now automatically populated using the values in the movement type default DateFormulas. A new Refresh action was surfaced on the Queued Documents to allow refresh of the data. 
+
+- AppSource App - Some existing KPIs on the SD Stores Logistics Setup card were removed and other KPIs were added. 
+
+- AppSource App - A new Visual Planner Setup page was created. Existing Visual Planner setup fields were removed from the SD Stores Logistics Setup Card and added to this new page. 
+
+- AppSource App - The Drivers, Vehicle Types and Vehicles actions were removed from the SD Stores Logistics Setup Card. A new action called Own Transport was surfaced on the Setup Card that opens the SD Stores Logistics Vehicles list. 
+
+- AppSource App - The standard Shipping Agents page was extended for SD Stores Logistics and a new action for the Shipping Agents page was added to the SD Stores Logistics Setup Card.  The Shipping Agents to Vendors, Zones, and Rates actions were removed from the SD Stores Logistics Setup card and placed on the extended Shipping Agents page. 
+
+- BCv14 App - The v4.0.0 AppSource App was backported to BCv14.
+
+- BCv14 App - Documents that are fully shipped and invoiced should not appear in the Queued Documents list. 
+
+- BCv14 App - Add a prompt on open of the SD Stores Logistics Role Centre to Activate the SD Stores Logistics Licence. 
+
+- BCv14 App - The Cue Group Captions on the Role Centre were removed. 
+
+- BCv14 App - When the Enforce Manifest Cost option in the Setup card is off, don't prompt the user to enter rates on the Manifest. 
+
+- BCv14 App - Do not allow users to add rates of type Fuel Surcharge and Agreed Rate on the Zone Rates List in the Zone Card. 
+
+
+#### Bug Fixes
+
+- AppSource App - A new rate was entered on the Queued Documents and was inserted into the Rate Card/List without prompting the user. This was fixed. 
+
+- AppSource App - Update the message raised when prompting the user to update an existing rate. 
+
+- AppSource App - From the Manifest card, an empty Manifest was deleted but the Manifest was still showing in the Open Load Manifest list. This was fixed. 
+
+- AppSource App - On Closing a Manifest with Sales Orders and Sales Return Orders, the Sales Orders were no longer showing in the Queued Documents list but the Sales Return Order was. This was fixed. 
+
+- AppSource App - The take effect date was added to the prompt shown to users when updating rates where an existing rate exists. 
+
+- AppSource App - When adding a Vendor to the Shipping Agent to Vendor list, the Vendor's Currency Code was not picked up.  
+
+- AppSource App - Auto population of the Queued Documents was bringing in all documents up to the DateFormulas as specified in the SD Stores Logistics Setup but the Refresh action was bringing in documents limited to the from/to date. This was changed so documents are initially populated and refreshed with ..(workdate + dateformula). 
+
+- AppSource App - Currency codes on the rate record were not validating off the currency table. 
+
+- AppSource App - A change was made to allow a drill down from the Load Manifest No. in the Queued Documents to the Manifest Card. 
+
+- AppSource App - Fixed an issue where the Manifest was Closed but the status on the Manifest was still showing a status of Released. 
+
+- AppSource App - A small typo was fixed on the message displayed when posting/shipping a manifest. 
+
+- AppSource App - When creating a new rate based on user input into the Queued Documents list, the Shipping Agent Service Code was not being updated on the Rate Card. 
+
+- BCv14 App - The rate was  not revalidating if a Shipping Agent or Shipping Agent Service on the line was changed. 
+
+- BCv14 App - In the SD Stores Logistics Visual Planner Setup the Fields could be selected from the list of fields on the table. This was fixed. 
+
+- BCv14 App - A new rate was entered on the Queued Documents and was inserted into the Rate Card/List without prompting the user. This was fixed. 
+
+- BCv14 App - Changing a Shipping Agent or Service Code was revalidating the Pallet Space Rate but was not revalidating the Total Rate.
+
+- BCv14 App - Update the message raised when prompting the user to update an existing rate. 
+
 ### 3.1.1
 
 #### Enhancements
