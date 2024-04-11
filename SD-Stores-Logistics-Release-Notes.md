@@ -1,5 +1,11 @@
 ## SD Stores Logistics Releases
 
+### 4.0.0.1
+
+#### Enhancements
+
+- BCv14 App - A permission set was created for SD Stores Logistics.
+
 ### 4.0.0
 
 #### Enhancements
