@@ -1,5 +1,17 @@
 ## SD Stores Logistics Releases
 
+### 4.0.1
+
+#### Enhancements
+
+- AppSource App - Update for 2024 wave 2 release. Report Interactions no longer contain a definition for the FindInteractTmplCode function in 2024 wave 2. The FindInteractTmplCode function is replaced with new functionality. The SD Logistics Delivery Docket report was updated to use the new functionality.
+
+- AppSource App - A change was made to the Assisted Setup functionality.
+
+- AppSource App - The links in the About page were updated.
+
+- AppSource App - The logo in the App was updated to the new logo.
+
 ### 4.0.0.1
 
 #### Enhancements
